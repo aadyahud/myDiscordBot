@@ -1,10 +1,10 @@
 import discord
 from discord.ext import commands
 intents = discord.Intents.all()
-
+#this is the cats branch
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-@bot.event#hgjhgj
+@bot.event
 async def on_connect():
   print("Your bot is online!")
 
