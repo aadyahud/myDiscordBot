@@ -1,27 +1,52 @@
-import discord
-from discord.ext import commands
-intents = discord.Intents.all()
-#this is the cats branch
-bot = commands.Bot(command_prefix='!', intents=intents)
 
+# import os
+# import discord
+# from discord.ext import commands
+
+import os
+
+
+
+import discord
+
+
+intents = discord.Intents.all()
+
+#client = discord.Client()
+client = discord.Client(intents=intents)
+bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.event
 async def on_connect():
-  print("Your bot is online!")
+    print('AadyaBot has connected to Discord!')
 
-@bot.command()
-async def aadya(ctx):
-  await ctx.reply("Hello from AadyaBot!")
+async def 
+bot.run('MTAzNDIyNDY1MzI5Nzc3ODcxOQ.G-YBtg.bUzBBKv-hui0PC0jusqRQ_rT5mav4b15Vmcu-I')
+  
+my_secret = os.environ['TOKEN']
+client.run(my_secret)
 
-bot.run('bot token here')
+# intents = discord.Intents.all()
 
-async def Time(ctx, time1, time2)
-  resp="yo"
-  if "am" in time2.lower():
-    resp="Good morning!"
-  elif "pm" in time2.lower():
-    if int(time1)<5:
-      resp="Good afternoon!"
-    else:
-      resp="Good evening!"
-  else:
-    resp=""
+# client = discord.Client(intents=intents)
+# bot = commands.Bot(command_prefix='!', intents=intents)
+
+# @bot.event
+# async def on_connect():
+#   print("Your bot is online!")
+
+# @bot.command()
+# async def aadya(ctx):
+#   await ctx.reply("Hello from AadyaBot!")
+
+# bot.run('MTAzNDIyNDY1MzI5Nzc3ODcxOQ.G-YBtg.bUzBBKv-hui0PC0jusqRQ_rT5mav4b15Vmcu-I')
+
+# @client.event
+# async def on_message(msg):
+#   if msg.author==client.user:
+#     return
+#   if msg.content.startswith("!aadya"):
+#     await msg.channel.send("Hello from AadyaBot!")
+
+# my_secret = os.environ['TOKEN']
+# client.run(my_secret)
+
